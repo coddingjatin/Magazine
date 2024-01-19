@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magazine Committee</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+           <a href="index.html"><img src="logo.png" alt="logo"></a>
+           <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Articles</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+           </div> 
+           <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Welcome to our Magazine Committee</h1>
+            <p>Explore the latest articles, stay updated with our events, and join us in celebrating creativity.</p>
+            <a href="#" class="hero-btn">Read Latest Articles</a>
+        </div>
+    </section>
+
+<!-- About Institute -->
+<section class="about-institute">
+    <h1>About Our Institute</h1>
+    <p>Learn more about our institute's mission, values, and commitment to education.</p>
+
+    <div class="row">
+        <div class="section-col">
+            <h3>Our Mission</h3>
+            <p>Discover our institute's mission to provide quality education and foster creativity in students.</p>
+        </div>
+        <div class="section-col">
+            <h3>History</h3>
+            <p>Explore the rich history and milestones of our institute in the journey of academic excellence.</p>
+        </div>
+        <div class="section-col">
+            <h3>Faculty</h3>
+            <p>Meet our dedicated faculty members who contribute to the intellectual growth of our students.</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Events -->
+    <section class="events">
+        <h1>Upcoming Events</h1>
+        <p>Join us at our exciting events where creativity takes center stage.</p>
+
+        <div class="row">
+            <div class="event-col">
+                <img src="event_image1.jpg" alt="Event 1">
+                <div class="layer">
+                    <h3>Art Exhibition</h3>
+                </div>
+            </div>
+            <div class="event-col">
+                <img src="event_image2.jpg" alt="Event 2">
+                <div class="layer">
+                    <h3>Literary Fest</h3>
+                </div>
+            </div>
+            <div class="event-col">
+                <img src="event_image3.jpg" alt="Event 3">
+                <div class="layer">
+                    <h3>Photography Workshop</h3>
+                </div>
+            </div>
+         </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact">
+        <h1>Contact Us</h1>
+        <p>Have questions or want to contribute? Reach out to us!</p>
+        <a href="#" class="hero-btn">Get in Touch</a>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Explore the world of creativity with our magazine committee. Join us in celebrating art and innovation.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Magazine Committee</p>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        var navLinks =  document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right ="-200px";
+        }
+    </script>
+</body>
+</html>
